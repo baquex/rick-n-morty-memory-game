@@ -35,6 +35,17 @@
 
 @layer components {
   .character-input {
-    @apply w-52 h-12 my-2 text-center;
+    @apply w-52 h-12 my-2 text-center sm:w-72;
+  }
+}
+
+@layer components {
+  .single-card {
+    @apply w-24 h-24 text-center border-2 my-2;
+  }
+}
+@layer components {
+  .card-holder {
+    @apply w-screen h-screen bg-black bg-opacity-80 grid grid-cols-3 gap-1 place-content-center place-items-center;
   }
 }
