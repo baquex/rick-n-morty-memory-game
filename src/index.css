@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url('./images/bg-image-small.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 600px) {
+  #root{
+    background: url('./images/bg-image.png');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@layer components {
+  .start-btn {
+    @apply bg-orange-600 w-52 h-14 text-xl text-white font-bold hover:bg-orange-800 sm:w-72 sm:h-16 sm:text-2xl;
+  }
+}
+
+@layer components {
+  .character-input {
+    @apply w-52 h-12 my-2 text-center;
+  }
+}
